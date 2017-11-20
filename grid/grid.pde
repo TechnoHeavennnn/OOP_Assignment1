@@ -5,6 +5,8 @@ int h = 1000;
 int cols,rows;
 int size = 15;
 
+float flying = 0;
+
 float[][] terrain;
 
 void setup() {
@@ -12,7 +14,12 @@ void setup() {
  cols = w/size;
  rows = h/size;
  terrain = new float[cols][rows];
- float yoff = 0;
+}
+
+void draw() {
+  flying -= 0.1;
+  
+  float yoff = flying;
    for (y=0; y<rows-1; y++){
      float xoff = 0;
      for (x=0 ; x<cols; x++){
@@ -21,9 +28,7 @@ void setup() {
      }
      yoff += 0.2;
    }
-}
-
-void draw() {
+   
   background(0);
   stroke(176,196,222);
   noFill();
