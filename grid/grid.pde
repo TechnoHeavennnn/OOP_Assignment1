@@ -12,10 +12,14 @@ void setup() {
  cols = w/size;
  rows = h/size;
  terrain = new float[cols][rows];
+ float yoff = 0;
    for (y=0; y<rows-1; y++){
+     float xoff = 0;
      for (x=0 ; x<cols; x++){
-       terrain[x][y] = map(noise(x,y), 0, 1, -20, 20);
+       terrain[x][y] = map(noise(xoff,yoff), 0, 1, -50, 50);
+       xoff += 0.2;
      }
+     yoff += 0.2;
    }
 }
 
