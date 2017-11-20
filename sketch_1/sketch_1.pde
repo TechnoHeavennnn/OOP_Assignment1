@@ -15,7 +15,7 @@ void draw() {
   
   for (x=0 ; x<cols; x++){
     for (y=0; y<rows; y++){
-      stroke(255);
+      stroke(176,196,222);
       noFill();
       rect(x*size,y*size,size,size);
     }
