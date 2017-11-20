@@ -30,7 +30,7 @@ void draw() {
    }
    
   background(0);
-  stroke(176,196,222);
+  stroke(50,205,50);
   noFill();
   translate(width/2, height/2);
   
