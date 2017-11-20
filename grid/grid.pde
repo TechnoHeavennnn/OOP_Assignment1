@@ -1,15 +1,15 @@
 int x,y;
 int i,j;
-int w = 1000;
-int h = 1000;
+int w = 2000;
+int h = 1500;
 int cols,rows;
-int size = 15;
+int size = 20;
 
 float flying = 0;
 
 float[][] terrain;
 
-void setup() {
+void setup() {  
  size (1200, 675, P3D);
  cols = w/size;
  rows = h/size;
